@@ -24,8 +24,6 @@ public class ProductPage extends AbstractComponent {
 
     @FindBy(css = ".ng-animating")
     WebElement animatingBy;
-
-
     By productsBy = By.cssSelector(".mb-3");
     By addCardBy = By.cssSelector(".w-10");
     By toastContainerBy = By.id("toast-container");
