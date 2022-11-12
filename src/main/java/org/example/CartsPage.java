@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import java.util.List;
 
@@ -21,8 +20,7 @@ public class CartsPage extends AbstractComponent {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//li/button[@routerlink='/dashboard/cart']")
-    WebElement cartsPage;
+
 
     @FindBy(css = ".cartWrap")
     List<WebElement> carts;
@@ -32,12 +30,16 @@ public class CartsPage extends AbstractComponent {
 
     By cardTagNameBy = By.tagName("h3");
 
-    public void goToCartsPageAndCheckTheOrder(String productName){
+    public boolean goToCartsPageAndCheckTheOrder(String productName){
 
-        cartsPage.click();
         boolean prodCart = carts.stream().anyMatch(cartProduct ->
                 cartProduct.findElement(cardTagNameBy).getText().equals(productName));
-        Assert.assertTrue(prodCart);
+        return prodCart;
+    }
+    public PaymentPage checkOut()
+    {
         totalButton.click();
+        PaymentPage paymentPage = new PaymentPage(driver);
+        return paymentPage;
     }
 }

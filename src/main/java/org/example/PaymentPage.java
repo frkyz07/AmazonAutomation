@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import java.util.List;
 
@@ -30,11 +29,13 @@ public class PaymentPage extends AbstractComponent {
     @FindBy(css = ".action__submit")
     WebElement actionButton;
 
-    public void selectCountry(String countryName) {
+    public ThankYouPage selectCountry(String countryName) {
 
         countryInput.sendKeys(countryName);
         driver.findElement(By.xpath("//*[contains(text(),'" + countryName + "')]")).click();
         actionButton.click();
+        ThankYouPage thankYouPage = new ThankYouPage(driver);
+        return thankYouPage;
     }
 
 }

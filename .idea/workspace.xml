@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- working on new framework">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CartsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PaymentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ThankYouPage.java" afterDir="false" />
+    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- run the test with page object model desing pattern">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CartsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CartsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PaymentPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ThankYouPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ThankYouPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668263772079</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- run the test with page object model desing pattern">
+      <created>1668267330569</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668267330571</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +145,7 @@
     <MESSAGE value="- dependencies" />
     <MESSAGE value="- add new example" />
     <MESSAGE value="- working on new framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="- working on new framework" />
+    <MESSAGE value="- run the test with page object model desing pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="- run the test with page object model desing pattern" />
   </component>
 </project>

@@ -24,6 +24,9 @@ public class ProductPage extends AbstractComponent {
 
     @FindBy(css = ".ng-animating")
     WebElement animatingBy;
+
+    @FindBy(xpath = "//li/button[@routerlink='/dashboard/cart']")
+    WebElement cartsPage;
     By productsBy = By.cssSelector(".mb-3");
     By addCardBy = By.cssSelector(".w-10");
     By toastContainerBy = By.id("toast-container");
@@ -43,12 +46,15 @@ public class ProductPage extends AbstractComponent {
         return prod;
     }
 
-    public void addProductToCard(String productName) {
+    public CartsPage addProductToCard(String productName) {
 
         WebElement prod = getProductByName(productName);
         prod.findElement(addCardBy).click();
         waitForTheElement(toastContainerBy);
         waitForTheElementToInvisible(animatingBy);
+        cartsPage.click();
+        CartsPage cartsPage = new CartsPage(driver);
+        return cartsPage;
     }
 }
 

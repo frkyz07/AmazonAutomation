@@ -30,11 +30,12 @@ public class LandingPage extends AbstractComponent {
     @FindBy(css = ".mb-3")
     List<WebElement> products;
 
-    public void loginApplication(String email, String password) {
-
+    public ProductPage loginApplication(String email, String password) {
         userEmail.sendKeys(email);
         userPassword.sendKeys(password);
         login.click();
+        ProductPage productPage = new ProductPage(driver);
+        return productPage;
     }
 
     public void goTo() {

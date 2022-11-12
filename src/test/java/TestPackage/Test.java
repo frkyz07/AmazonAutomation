@@ -4,15 +4,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.example.*;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.testng.Assert;
 
 import java.time.Duration;
-import java.util.List;
 
 public class Test {
-
 
     public static void main(String[] args) {
 
@@ -26,18 +23,15 @@ public class Test {
         // TESTING WITH PAGE OBJECT MODEL
 
         LandingPage landingPage = new LandingPage(driver);
-        ProductPage productPage = new ProductPage(driver);
-        CartsPage cartsPage = new CartsPage(driver);
-        PaymentPage paymentPage = new PaymentPage(driver);
-        ThankYouPage thankYouPage = new ThankYouPage(driver);
-
         landingPage.goTo();
-        landingPage.loginApplication("faruk@ayaz.com", "Faruk.1313");
-        //List<WebElement> products = productPage.getProductsList();
-        productPage.addProductToCard(productName);
-        cartsPage.goToCartsPageAndCheckTheOrder(productName);
-        paymentPage.selectCountry("Turkey");
-        thankYouPage.confirmationInformation("THANKYOU FOR THE ORDER.");
+        ProductPage productPage = landingPage.loginApplication("faruk@ayaz.com", "Faruk.1313");
+        CartsPage cartsPage = productPage.addProductToCard(productName);
+        Assert.assertTrue(cartsPage.goToCartsPageAndCheckTheOrder(productName));
+        PaymentPage paymentPage = cartsPage.checkOut();
+        ThankYouPage thankYouPage = paymentPage.selectCountry("Turkey");
+        Assert.assertEquals(thankYouPage.confirmationInformation(),"THANKYOU FOR THE ORDER.");
+        System.out.println(thankYouPage.getElement());
+
 
 
         /* TESTING WITHOUT PAGE OBJECT MODEL
