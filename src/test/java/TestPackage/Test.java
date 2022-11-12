@@ -1,12 +1,12 @@
 package TestPackage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.example.LandingPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -26,7 +26,7 @@ public class Test {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         driver.get("https://rahulshettyacademy.com/client/");
-
+        LandingPage landingPage = new LandingPage(driver);
         driver.findElement(By.id("userEmail")).sendKeys("faruk@ayaz.com");
         driver.findElement(By.id("userPassword")).sendKeys("Faruk.1313");
         driver.findElement(By.id("login")).click();
@@ -38,7 +38,7 @@ public class Test {
         System.out.println(products.get(1).getText());
 
         WebElement prod = products.stream().filter(product ->
-                product.findElement(By.tagName("b")).getText().equals(productName)).
+                        product.findElement(By.tagName("b")).getText().equals(productName)).
                 findFirst().orElse(null);
 
         prod.findElement(By.cssSelector(".w-10")).click();
