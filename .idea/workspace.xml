@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- add new example">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LandingPage.java" afterDir="false" />
+    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- working on new framework">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LandingPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +42,11 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
@@ -97,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667064490608</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- working on new framework">
+      <created>1668259791765</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668259791766</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +128,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- dependencies" />
     <MESSAGE value="- add new example" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add new example" />
+    <MESSAGE value="- working on new framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="- working on new framework" />
   </component>
 </project>

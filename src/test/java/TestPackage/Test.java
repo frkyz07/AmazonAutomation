@@ -2,6 +2,7 @@ package TestPackage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.example.LandingPage;
+import org.example.ProductPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,27 +26,28 @@ public class Test {
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
-        driver.get("https://rahulshettyacademy.com/client/");
-        LandingPage landingPage = new LandingPage(driver);
-        driver.findElement(By.id("userEmail")).sendKeys("faruk@ayaz.com");
-        driver.findElement(By.id("userPassword")).sendKeys("Faruk.1313");
-        driver.findElement(By.id("login")).click();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
 
-        List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
+        LandingPage landingPage = new LandingPage(driver);
+        ProductPage productPage = new ProductPage(driver);
+        landingPage.goTo();
+        landingPage.loginApplication("faruk@ayaz.com", "Faruk.1313");
+        List<WebElement> products = productPage.getProductsList();
+        productPage.addProductToCard(productName);
 
         System.out.println(products.get(1).getText());
 
-        WebElement prod = products.stream().filter(product ->
-                        product.findElement(By.tagName("b")).getText().equals(productName)).
-                findFirst().orElse(null);
+        // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
+        // wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
 
-        prod.findElement(By.cssSelector(".w-10")).click();
-        System.out.println(prod.getText());
+        //  WebElement prod = products.stream().filter(product ->
+        //                 product.findElement(By.tagName("b")).getText().equals(productName)).
+        //         findFirst().orElse(null);
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("toast-container")));
-        wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
+        //System.out.println(prod.getText());
+
+
+        // wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("toast-container")));
+        //  wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
 
         driver.findElement(By.xpath("//li/button[@routerlink='/dashboard/cart']")).click();
 
