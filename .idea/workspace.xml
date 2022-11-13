@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- run the test with page object model desing pattern">
+    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- optimize the usage of pages">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Resources/data.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CartsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CartsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LandingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PaymentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ThankYouPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ThankYouPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668267330571</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- optimize the usage of pages">
+      <created>1668271666796</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668271666796</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +150,7 @@
     <MESSAGE value="- add new example" />
     <MESSAGE value="- working on new framework" />
     <MESSAGE value="- run the test with page object model desing pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="- run the test with page object model desing pattern" />
+    <MESSAGE value="- optimize the usage of pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="- optimize the usage of pages" />
   </component>
 </project>
