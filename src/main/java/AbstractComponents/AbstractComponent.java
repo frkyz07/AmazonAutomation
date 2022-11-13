@@ -16,6 +16,11 @@ public class AbstractComponent {
         this.driver = driver;
     }
 
+    public void waitForTheWebElement(WebElement findBy) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
+        wait.until(ExpectedConditions.visibilityOf(findBy));
+    }
+
     public void waitForTheElement(By findBy) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
         wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));

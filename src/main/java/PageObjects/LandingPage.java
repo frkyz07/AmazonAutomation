@@ -1,4 +1,4 @@
-package org.example;
+package PageObjects;
 
 import AbstractComponents.AbstractComponent;
 import org.openqa.selenium.WebDriver;
@@ -27,8 +27,8 @@ public class LandingPage extends AbstractComponent {
     @FindBy(id = "login")
     WebElement login;
 
-    @FindBy(css = ".mb-3")
-    List<WebElement> products;
+    @FindBy(css = "[class*='flyInOut'")
+    WebElement errorMessage;
 
     public ProductPage loginApplication(String email, String password) {
         userEmail.sendKeys(email);
@@ -36,6 +36,10 @@ public class LandingPage extends AbstractComponent {
         login.click();
         ProductPage productPage = new ProductPage(driver);
         return productPage;
+    }
+    public String getErrorMessage(){
+        waitForTheWebElement(errorMessage);
+        return errorMessage.getText();
     }
 
     public void goTo() {

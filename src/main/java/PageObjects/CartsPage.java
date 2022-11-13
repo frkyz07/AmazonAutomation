@@ -1,4 +1,4 @@
-package org.example;
+package PageObjects;
 
 import AbstractComponents.AbstractComponent;
 import org.openqa.selenium.By;
@@ -20,8 +20,6 @@ public class CartsPage extends AbstractComponent {
         PageFactory.initElements(driver, this);
     }
 
-
-
     @FindBy(css = ".cartWrap")
     List<WebElement> carts;
 
@@ -30,14 +28,14 @@ public class CartsPage extends AbstractComponent {
 
     By cardTagNameBy = By.tagName("h3");
 
-    public boolean goToCartsPageAndCheckTheOrder(String productName){
+    public boolean goToCartsPageAndCheckTheOrder(String productName) {
 
         boolean prodCart = carts.stream().anyMatch(cartProduct ->
                 cartProduct.findElement(cardTagNameBy).getText().equals(productName));
         return prodCart;
     }
-    public PaymentPage checkOut()
-    {
+
+    public PaymentPage checkOut() {
         totalButton.click();
         PaymentPage paymentPage = new PaymentPage(driver);
         return paymentPage;

@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- optimize the usage of pages">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Resources/data.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" afterDir="false" />
+    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- base test implementation">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestPackage/ErrorValidations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CartsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/CartsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/PaymentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ThankYouPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ThankYouPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/SubmitOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +49,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="TestPackage" />
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="TestNG.ErrorValidations">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="newFrameWork" />
@@ -60,8 +67,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestPackage.Test" />
+    <configuration name="SubmitOrderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestPackage.SubmitOrderTest" />
       <module name="newFrameWork" />
       <extension name="coverage">
         <pattern>
@@ -73,9 +80,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ErrorValidations" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="newFrameWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestPackage" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.ErrorValidations" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubmitOrderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="newFrameWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestPackage" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.SubmitOrderTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
+        <item itemvalue="TestNG.ErrorValidations" />
+        <item itemvalue="TestNG.SubmitOrderTest" />
+        <item itemvalue="Application.SubmitOrderTest" />
         <item itemvalue="Application.org.example.Main" />
       </list>
     </recent_temporary>
@@ -131,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668271666796</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- base test implementation">
+      <created>1668343904503</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668343904504</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,6 +201,7 @@
     <MESSAGE value="- working on new framework" />
     <MESSAGE value="- run the test with page object model desing pattern" />
     <MESSAGE value="- optimize the usage of pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="- optimize the usage of pages" />
+    <MESSAGE value="- base test implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="- base test implementation" />
   </component>
 </project>

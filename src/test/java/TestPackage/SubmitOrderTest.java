@@ -1,38 +1,32 @@
 package TestPackage;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.example.*;
+import PageObjects.CartsPage;
+import PageObjects.PaymentPage;
+import PageObjects.ProductPage;
+import PageObjects.ThankYouPage;
+import TestComponents.BaseTest;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
-import java.time.Duration;
+import java.io.IOException;
 
-public class Test {
+public class SubmitOrderTest extends BaseTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void submitOrder() throws IOException {
 
         String productName = "ADIDAS ORIGINAL";
-
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
-
         // TESTING WITH PAGE OBJECT MODEL
 
-        LandingPage landingPage = new LandingPage(driver);
-        landingPage.goTo();
         ProductPage productPage = landingPage.loginApplication("faruk@ayaz.com", "Faruk.1313");
         CartsPage cartsPage = productPage.addProductToCard(productName);
         Assert.assertTrue(cartsPage.goToCartsPageAndCheckTheOrder(productName));
         PaymentPage paymentPage = cartsPage.checkOut();
         ThankYouPage thankYouPage = paymentPage.selectCountry("Turkey");
-        Assert.assertEquals(thankYouPage.confirmationInformation(),"THANKYOU FOR THE ORDER.");
+        Assert.assertEquals(thankYouPage.confirmationInformation(), "THANKYOU FOR THE ORDER.");
         System.out.println(thankYouPage.getElement());
-
-
 
         /* TESTING WITHOUT PAGE OBJECT MODEL
          WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));

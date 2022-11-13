@@ -1,4 +1,4 @@
-package org.example;
+package PageObjects;
 
 import AbstractComponents.AbstractComponent;
 import org.openqa.selenium.By;
