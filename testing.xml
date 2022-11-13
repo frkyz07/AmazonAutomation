@@ -1,0 +1,12 @@
+<suite name="Suite1" verbose="1" >
+    <test name="Nopackage" >
+        <classes>
+            <class name="TestPackage.SubmitOrderTest" />
+        </classes>
+    </test>
+    <test name="Regression1">
+        <classes>
+            <class name="TestPackage.ErrorValidations"/>
+        </classes>
+    </test>
+</suite>
