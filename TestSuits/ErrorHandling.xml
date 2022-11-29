@@ -1,0 +1,21 @@
+<suite parallel = "tests" name="Suite1" verbose="1" >
+
+    <groups>
+
+        <run>
+            <include name = "ErrorHandling"/>
+        </run>
+
+        <test name="Submit Order Test" >
+            <classes>
+                <class name="TestPackage.SubmitOrderTest" />
+            </classes>
+        </test>
+        <test name="Error Validations Test">
+            <classes>
+                <class name="TestPackage.ErrorValidationsTest"/>
+            </classes>
+        </test>
+    </groups>
+
+</suite>

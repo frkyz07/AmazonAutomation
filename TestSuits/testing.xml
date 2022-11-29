@@ -1,4 +1,4 @@
-<suite name="Suite1" verbose="1" >
+<suite parallel = "tests" name="Suite1" verbose="1" >
     <test name="Submit Order Test" >
         <classes>
             <class name="TestPackage.SubmitOrderTest" />

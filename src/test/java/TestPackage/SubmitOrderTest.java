@@ -1,9 +1,6 @@
 package TestPackage;
 
-import PageObjects.CartsPage;
-import PageObjects.PaymentPage;
-import PageObjects.ProductPage;
-import PageObjects.ThankYouPage;
+import PageObjects.*;
 import TestComponents.BaseTest;
 
 
@@ -14,10 +11,11 @@ import java.io.IOException;
 
 public class SubmitOrderTest extends BaseTest {
 
+    String productName = "ADIDAS ORIGINAL";
+
     @Test
     public void submitOrder() throws IOException {
 
-        String productName = "ADIDAS ORIGINAL";
         // TESTING WITH PAGE OBJECT MODEL
 
         ProductPage productPage = landingPage.loginApplication("faruk@ayaz.com", "Faruk.1313");
@@ -61,6 +59,16 @@ public class SubmitOrderTest extends BaseTest {
 
     }
     // check the product is displaying or not
+    @Test(dependsOnMethods = {"submitOrder"})
+    public void orderHistoryTest(){
 
+        ProductPage productPage = landingPage.loginApplication("faruk@ayaz.com", "Faruk.1313");
+        OrderPage orderPage = productPage.goToOrderPage();
+        Assert.assertTrue(orderPage.goToCheckTheOrder(productName));
+
+
+
+
+    }
 
 }
