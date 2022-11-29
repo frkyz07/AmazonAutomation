@@ -60,5 +60,7 @@ public class SubmitOrderTest extends BaseTest {
         driver.close();*/
 
     }
+    // check the product is displaying or not
+
 
 }

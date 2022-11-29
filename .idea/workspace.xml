@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- testing.xml file added">
-      <change afterPath="$PROJECT_DIR$/testing.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/ErrorValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/ErrorValidations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/ErrorValidations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/ErrorValidationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testing.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +33,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="TestPackage" />
@@ -50,7 +50,7 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/testing.xml">
-    <configuration name="SubmitOrderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPackage.SubmitOrderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestPackage.SubmitOrderTest" />
       <module name="newFrameWork" />
       <extension name="coverage">
@@ -63,7 +63,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ErrorValidations" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ErrorValidationsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="newFrameWork" />
       <extension name="coverage">
         <pattern>
@@ -72,7 +72,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestPackage" />
-      <option name="MAIN_CLASS_NAME" value="TestPackage.ErrorValidations" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.ErrorValidationsTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -80,7 +80,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ErrorValidations.productNameError" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ErrorValidationsTest.productNameError" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="newFrameWork" />
       <extension name="coverage">
         <pattern>
@@ -89,7 +89,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="TestPackage" />
-      <option name="MAIN_CLASS_NAME" value="TestPackage.ErrorValidations" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.ErrorValidationsTest" />
       <option name="METHOD_NAME" value="productNameError" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -128,10 +128,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/testing.xml" />
-        <item itemvalue="TestNG.ErrorValidations.productNameError" />
-        <item itemvalue="TestNG.ErrorValidations" />
+        <item itemvalue="TestNG.ErrorValidationsTest.productNameError" />
+        <item itemvalue="TestNG.ErrorValidationsTest" />
         <item itemvalue="TestNG.SubmitOrderTest" />
-        <item itemvalue="Application.SubmitOrderTest" />
+        <item itemvalue="Application.TestPackage.SubmitOrderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668346346698</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- testing.xml file added">
+      <created>1668349831440</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668349831441</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

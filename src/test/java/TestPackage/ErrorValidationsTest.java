@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class ErrorValidations extends BaseTest {
+public class ErrorValidationsTest extends BaseTest {
 
     String productName = "ADIDAS ORIGINAL";
     @Test
@@ -16,7 +16,6 @@ public class ErrorValidations extends BaseTest {
 
         landingPage.loginApplication("faruk@ayasdaz.com", "Fasdaruk.1313");
         Assert.assertEquals("Incorrect email or password.",landingPage.getErrorMessage());
-
     }
     @Test
     public void productNameError() {
@@ -27,7 +26,5 @@ public class ErrorValidations extends BaseTest {
         Assert.assertFalse(cartsPage.goToCartsPageAndCheckTheOrder(wrongProductName));
 
     }
-
-
 
 }
