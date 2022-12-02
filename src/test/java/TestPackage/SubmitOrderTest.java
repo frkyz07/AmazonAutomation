@@ -5,22 +5,24 @@ import TestComponents.BaseTest;
 
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 public class SubmitOrderTest extends BaseTest {
 
     String productName = "ADIDAS ORIGINAL";
 
-    @Test
-    public void submitOrder() throws IOException {
+    @Test(dataProvider = "getData", groups = {"Purchase"})
+    public void submitOrder(HashMap<Object,Object> input ) throws IOException {
 
         // TESTING WITH PAGE OBJECT MODEL
 
-        ProductPage productPage = landingPage.loginApplication("faruk@ayaz.com", "Faruk.1313");
-        CartsPage cartsPage = productPage.addProductToCard(productName);
-        Assert.assertTrue(cartsPage.goToCartsPageAndCheckTheOrder(productName));
+        ProductPage productPage = landingPage.loginApplication(input.get("email"), input.get("password"));
+        CartsPage cartsPage = productPage.addProductToCard(input.get("productName"));
+        Assert.assertTrue(cartsPage.goToCartsPageAndCheckTheOrder(input.get("productName")));
         PaymentPage paymentPage = cartsPage.checkOut();
         ThankYouPage thankYouPage = paymentPage.selectCountry("Turkey");
         Assert.assertEquals(thankYouPage.confirmationInformation(), "THANKYOU FOR THE ORDER.");
@@ -65,10 +67,21 @@ public class SubmitOrderTest extends BaseTest {
         ProductPage productPage = landingPage.loginApplication("faruk@ayaz.com", "Faruk.1313");
         OrderPage orderPage = productPage.goToOrderPage();
         Assert.assertTrue(orderPage.goToCheckTheOrder(productName));
+    }
+    @DataProvider
+    public Object[][] getData(){
 
+        HashMap<Object,Object> map = new HashMap<Object,Object>();
+        map.put("email","faruk@ayaz.com");
+        map.put("password","Faruk.1313");
+        map.put("productName","ADIDAS ORIGINAL");
 
+        HashMap<Object,Object> map1 = new HashMap<Object,Object>();
+        map1.put("email","frkyz07.13@gmail.com");
+        map1.put("password","Faruk.123");
+        map1.put("productName","ZARA COAT 3");
 
-
+        return new Object[][] {{map},{map1}};
     }
 
 }

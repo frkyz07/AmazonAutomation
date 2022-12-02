@@ -28,7 +28,7 @@ public class CartsPage extends AbstractComponent {
 
     By cardTagNameBy = By.tagName("h3");
 
-    public boolean goToCartsPageAndCheckTheOrder(String productName) {
+    public boolean goToCartsPageAndCheckTheOrder(Object productName) {
 
         boolean prodCart = carts.stream().anyMatch(cartProduct ->
                 cartProduct.findElement(cardTagNameBy).getText().equals(productName));

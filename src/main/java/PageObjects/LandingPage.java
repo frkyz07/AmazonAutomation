@@ -6,8 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-
 public class LandingPage extends AbstractComponent {
 
     WebDriver driver;
@@ -30,9 +28,9 @@ public class LandingPage extends AbstractComponent {
     @FindBy(css = "[class*='flyInOut'")
     WebElement errorMessage;
 
-    public ProductPage loginApplication(String email, String password) {
-        userEmail.sendKeys(email);
-        userPassword.sendKeys(password);
+    public ProductPage loginApplication(Object email, Object password) {
+        userEmail.sendKeys((String) email);
+        userPassword.sendKeys((String) password);
         login.click();
         ProductPage productPage = new ProductPage(driver);
         return productPage;

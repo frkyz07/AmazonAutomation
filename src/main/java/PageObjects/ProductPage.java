@@ -46,9 +46,9 @@ public class ProductPage extends AbstractComponent {
         return prod;
     }
 
-    public CartsPage addProductToCard(String productName) {
+    public CartsPage addProductToCard(Object productName) {
 
-        WebElement prod = getProductByName(productName);
+        WebElement prod = getProductByName((String) productName);
         prod.findElement(addCardBy).click();
         waitForTheElement(toastContainerBy);
         waitForTheElementToInvisible(animatingBy);
