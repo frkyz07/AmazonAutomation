@@ -4,12 +4,17 @@ import PageObjects.*;
 import TestComponents.BaseTest;
 
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 
 public class SubmitOrderTest extends BaseTest {
 
@@ -21,8 +26,8 @@ public class SubmitOrderTest extends BaseTest {
         // TESTING WITH PAGE OBJECT MODEL
 
         ProductPage productPage = landingPage.loginApplication(input.get("email"), input.get("password"));
-        CartsPage cartsPage = productPage.addProductToCard(input.get("productName"));
-        Assert.assertTrue(cartsPage.goToCartsPageAndCheckTheOrder(input.get("productName")));
+        CartsPage cartsPage = productPage.addProductToCard(input.get("product"));
+        Assert.assertTrue(cartsPage.goToCartsPageAndCheckTheOrder(input.get("product")));
         PaymentPage paymentPage = cartsPage.checkOut();
         ThankYouPage thankYouPage = paymentPage.selectCountry("Turkey");
         Assert.assertEquals(thankYouPage.confirmationInformation(), "THANKYOU FOR THE ORDER.");
@@ -68,20 +73,35 @@ public class SubmitOrderTest extends BaseTest {
         OrderPage orderPage = productPage.goToOrderPage();
         Assert.assertTrue(orderPage.goToCheckTheOrder(productName));
     }
-    @DataProvider
-    public Object[][] getData(){
-
-        HashMap<Object,Object> map = new HashMap<Object,Object>();
-        map.put("email","faruk@ayaz.com");
-        map.put("password","Faruk.1313");
-        map.put("productName","ADIDAS ORIGINAL");
-
-        HashMap<Object,Object> map1 = new HashMap<Object,Object>();
-        map1.put("email","frkyz07.13@gmail.com");
-        map1.put("password","Faruk.123");
-        map1.put("productName","ZARA COAT 3");
-
-        return new Object[][] {{map},{map1}};
+    public String getScreenShot(String testCaseName) throws IOException {
+        TakesScreenshot ts = (TakesScreenshot)driver;
+        File source = ts.getScreenshotAs(OutputType.FILE);
+        File file = new File(System.getProperty("user.dir")+"//reports//"+ testCaseName + ".png");
+        FileUtils.copyFile(source,file);
+        return (System.getProperty(("user.dir")+"//reports//"+ testCaseName + ".png"));
     }
+    @DataProvider
+    public Object[][] getData() throws IOException {
+
+        List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir")+"//src//main//java//Data//PurchaseOrder.json");
+        return new Object[][] {{data.get(0)},{data.get(1)}};
+    }
+
+    /* @DataProvider
+     public Object[][] getData() throws IOException {
+
+         HashMap<Object,Object> map = new HashMap<Object,Object>();
+         map.put("email","faruk@ayaz.com");
+         map.put("password","Faruk.1313");
+         map.put("productName","ADIDAS ORIGINAL");
+
+         HashMap<Object,Object> map1 = new HashMap<Object,Object>();
+         map1.put("email","frkyz07.13@gmail.com");
+         map1.put("password","Faruk.123");
+         map1.put("productName","ZARA COAT 3");
+
+        List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir")+"//src//main//java//Data//PurchaseOrder.json");
+        return new Object[][] {{data.get(0)},{data.get(1)}};
+    }*/
 
 }
