@@ -1,4 +1,9 @@
 <suite parallel = "tests" name="Suite1" verbose="1" >
+
+    <listeners>
+        <listener class-name="TestComponents.Listeners"/>
+    </listeners>
+
     <test name="Submit Order Test" >
         <classes>
             <class name="TestPackage.SubmitOrderTest" />
