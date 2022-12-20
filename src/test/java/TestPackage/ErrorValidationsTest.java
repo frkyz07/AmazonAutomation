@@ -16,7 +16,7 @@ public class ErrorValidationsTest extends BaseTest {
     public void loginError() throws IOException {
 
         landingPage.loginApplication("faruk@ayasdaz.com", "Fasdaruk.1313");
-        Assert.assertEquals("Incorrect email password.",landingPage.getErrorMessage());
+        Assert.assertEquals("Incorrect email or password.",landingPage.getErrorMessage());
     }
     @Test(groups = "ErrorHandling")
     public void productNameError() {

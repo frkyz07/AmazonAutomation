@@ -71,7 +71,7 @@ public class SubmitOrderTest extends BaseTest {
 
         ProductPage productPage = landingPage.loginApplication("faruk@ayaz.com", "Faruk.1313");
         OrderPage orderPage = productPage.goToOrderPage();
-        Assert.assertTrue(orderPage.goToCheckTheOrder(productName));
+        Assert.assertFalse(orderPage.goToCheckTheOrder(productName));
     }
 
     @DataProvider

@@ -4,20 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- added the json file reader">
-      <change afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/loginError.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/orderHistoryTest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/submitOrder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Resources/ExtentReporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestComponents/Listeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestComponents/Retry.java" afterDir="false" />
+    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- Extend report added fully">
+      <change afterPath="$PROJECT_DIR$/reports/productNameError.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestSuits/ErrorHandling.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuits/ErrorHandling.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestSuits/Purchase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuits/Purchase.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestSuits/testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuits/testing.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/loginError.png" beforeDir="false" afterPath="$PROJECT_DIR$/reports/loginError.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/orderHistoryTest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/submitOrder.png" beforeDir="false" afterPath="$PROJECT_DIR$/reports/submitOrder.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/ErrorValidationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/ErrorValidationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/SubmitOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/SubmitOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670076016411</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="- Extend report added fully">
+      <created>1671489855854</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671489855855</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,7 +271,8 @@
     <MESSAGE value="- xml examples added" />
     <MESSAGE value="- different test cases with using data provider" />
     <MESSAGE value="- added the json file reader" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added the json file reader" />
+    <MESSAGE value="- Extend report added fully" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Extend report added fully" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,10 +5,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import PageObjects.LandingPage;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -34,11 +36,16 @@ public class BaseTest {
         Properties properties = new Properties();
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//Resources//data.properties");
         properties.load(fis);
-        String browser = properties.getProperty("browser");
+        String browser =  System.getProperty("browser")!=null ? System.getProperty("browser"): properties.getProperty("browser");
 
-        if (browser.equalsIgnoreCase("chrome")) {
+        if (browser.contains("chrome")) {
+            ChromeOptions options = new ChromeOptions();
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            if (browser.contains("headless")){
+                options.addArguments("headless");
+                driver.manage().window().setSize(new Dimension(1440,900));
+            }
+            driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
