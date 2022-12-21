@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- Extend report added fully">
-      <change afterPath="$PROJECT_DIR$/reports/productNameError.png" afterDir="false" />
+    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- maven and jenkins integration">
+      <change afterPath="$PROJECT_DIR$/reports/orderHistoryTest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Cucumber/ErrorValidation.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Cucumber/SubmitOrder.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Cucumber/TestNGTestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinations/StepDefinationImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuits/ErrorHandling.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuits/ErrorHandling.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuits/Purchase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuits/Purchase.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuits/testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuits/testing.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/loginError.png" beforeDir="false" afterPath="$PROJECT_DIR$/reports/loginError.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/orderHistoryTest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/submitOrder.png" beforeDir="false" afterPath="$PROJECT_DIR$/reports/submitOrder.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/ErrorValidationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/ErrorValidationsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,18 +65,28 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/testing.xml">
-    <configuration name="SubmitOrderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestNGTestRunner">
+    <configuration name="TestNGTestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="newFrameWork" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TestPackage.*" />
+          <option name="PATTERN" value="Cucumber.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TestPackage" />
-      <option name="MAIN_CLASS_NAME" value="TestPackage.SubmitOrderTest" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Cucumber" />
+      <option name="MAIN_CLASS_NAME" value="Cucumber.TestNGTestRunner" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -127,13 +133,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/testing.xml" />
+      <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/ErrorHandling.xml" />
+      <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/Purchase.xml" />
+      <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/testing.xml" />
+      <item itemvalue="TestNG.TestNGTestRunner" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestNGTestRunner" />
         <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/testing.xml" />
         <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/Purchase.xml" />
         <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/ErrorHandling.xml" />
         <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/testing.xml" />
-        <item itemvalue="TestNG.SubmitOrderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671489855855</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="- maven and jenkins integration">
+      <created>1671573296833</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1671573296835</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,7 +292,8 @@
     <MESSAGE value="- different test cases with using data provider" />
     <MESSAGE value="- added the json file reader" />
     <MESSAGE value="- Extend report added fully" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Extend report added fully" />
+    <MESSAGE value="- maven and jenkins integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="- maven and jenkins integration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
