@@ -81,7 +81,7 @@ public class SubmitOrderTest extends BaseTest {
         return new Object[][] {{data.get(0)},{data.get(1)}};
     }
 
-    /* @DataProvider
+    /* @DataProviderExample
      public Object[][] getData() throws IOException {
 
          HashMap<Object,Object> map = new HashMap<Object,Object>();
