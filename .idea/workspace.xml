@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- second part of the dataProviders">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/submitOrder.png" beforeDir="false" afterPath="$PROJECT_DIR$/reports/submitOrder.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/DataProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/DataProviderExample.java" afterDir="false" />
-    </list>
+    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- last part of the dataProviders" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -296,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671917190709</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="- last part of the dataProviders">
+      <created>1671985065498</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1671985065499</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -328,7 +330,8 @@
     <MESSAGE value="- adding the cucumber framework" />
     <MESSAGE value="- first part of the dataProviders" />
     <MESSAGE value="- second part of the dataProviders" />
-    <option name="LAST_COMMIT_MESSAGE" value="- second part of the dataProviders" />
+    <MESSAGE value="- last part of the dataProviders" />
+    <option name="LAST_COMMIT_MESSAGE" value="- last part of the dataProviders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
