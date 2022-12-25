@@ -1,5 +1,7 @@
 package TestPackage;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -12,6 +14,8 @@ import java.io.IOException;
 
 public class DataProviderExample {
 
+
+    DataFormatter formatter = new DataFormatter();
 
     @Test(dataProvider = "DriverTest")
     public void testCaseData(String greeting, String message, String id){
@@ -32,7 +36,15 @@ public class DataProviderExample {
         XSSFRow theRow = excelSheet.getRow(0);
         int rowNumbers = theRow.getLastCellNum();
         Object data[][] = new Object[rows-1][rowNumbers];
+        
+        for(int i =0 ; i<rows-1;i++){
 
+            theRow = excelSheet.getRow(i+1);
+            for(int j=0;j<rowNumbers;j++){
+                XSSFCell cell = theRow.getCell(j);
+                data[i][j] = formatter.formatCellValue(cell);
+            }
+        }
         return data;
     }
 
