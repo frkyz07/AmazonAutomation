@@ -16,32 +16,18 @@ public class LandingPage extends AbstractComponent {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    @FindBy(id = "userEmail")
-    WebElement userEmail;
+    @FindBy(xpath = "//div/a[@data-csa-c-content-id='nav_cs_giftfinder']")
+    WebElement giftIdeas;
 
-    @FindBy(id = "userPassword")
-    WebElement userPassword;
 
-    @FindBy(id = "login")
-    WebElement login;
-
-    @FindBy(css = "[class*='flyInOut'")
-    WebElement errorMessage;
-
-    public ProductPage loginApplication(Object email, Object password) {
-        userEmail.sendKeys((String) email);
-        userPassword.sendKeys((String) password);
-        login.click();
-        ProductPage productPage = new ProductPage(driver);
-        return productPage;
-    }
-    public String getErrorMessage(){
-        waitForTheWebElement(errorMessage);
-        return errorMessage.getText();
+    public GiftsPage goToGiftIdeas() {
+        giftIdeas.click();
+        GiftsPage giftsPage = new GiftsPage(driver);
+        return giftsPage;
     }
 
     public void goTo() {
-        driver.get("https://rahulshettyacademy.com/client/");
+        driver.get("https://www.amazon.co.uk/");
     }
 
 

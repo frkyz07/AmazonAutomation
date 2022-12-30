@@ -4,9 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- last part of the dataProviders">
+    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- Amazon gift test's first fase added">
+      <change afterPath="$PROJECT_DIR$/reports/giftTest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasketPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestPackage/AmazonGiftTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestSuits/ErrorHandling.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestSuits/Purchase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuits/Amazon.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/loginError.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/orderHistoryTest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/productNameError.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/submitOrder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/PurchaseOrder.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/PurchaseOrder.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/CartsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/GiftsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/OrderPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/PaymentPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ThankYouPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasketAddedPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/DataProviderExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/ErrorValidationsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/SubmitOrderTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +62,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits",
+    "last_opened_file_path": "/Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -59,7 +81,24 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DataProviderExample.testCaseData">
+  <component name="RunManager" selected="TestNG./Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits/Amazon.xml">
+    <configuration name="AmazonGiftTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="newFrameWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestPackage" />
+      <option name="MAIN_CLASS_NAME" value="TestPackage.AmazonGiftTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DataProviderExample" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="newFrameWork" />
       <extension name="coverage">
@@ -122,19 +161,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/Purchase.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits/Amazon.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="newFrameWork" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestSuits/Purchase.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/testing.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="newFrameWork" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestSuits/testing.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestSuits/Amazon.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -143,19 +172,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG./Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits/Amazon.xml" />
+      <item itemvalue="TestNG.AmazonGiftTest" />
       <item itemvalue="TestNG.DataProviderExample" />
       <item itemvalue="TestNG.DataProviderExample.testCaseData" />
-      <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/Purchase.xml" />
-      <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/testing.xml" />
       <item itemvalue="TestNG.TestNGTestRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits/Amazon.xml" />
+        <item itemvalue="TestNG.AmazonGiftTest" />
         <item itemvalue="TestNG.DataProviderExample.testCaseData" />
         <item itemvalue="TestNG.DataProviderExample" />
         <item itemvalue="TestNG.TestNGTestRunner" />
-        <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/testing.xml" />
-        <item itemvalue="TestNG./Users/farukayaz/Downloads/E2ETestingFramework-master/newFrameWork/TestSuits/Purchase.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672003241496</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="- project cleaning">
+      <created>1672426166764</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1672426166766</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,17 +377,8 @@
     <MESSAGE value="- first part of the dataProviders" />
     <MESSAGE value="- second part of the dataProviders" />
     <MESSAGE value="- last part of the dataProviders" />
-    <option name="LAST_COMMIT_MESSAGE" value="- last part of the dataProviders" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/TestComponents/Listeners.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="- project cleaning" />
+    <MESSAGE value="- Amazon gift test's first fase added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Amazon gift test's first fase added" />
   </component>
 </project>

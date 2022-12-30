@@ -1,7 +1,6 @@
 package AbstractComponents;
 
-import PageObjects.CartsPage;
-import PageObjects.OrderPage;
+import PageObjects.GiftsPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,19 +35,23 @@ public class AbstractComponent {
     }
 
     public void waitForTheElementToInvisible(WebElement element) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
-    public CartsPage goToCartPage(){
+    public void waitForTheElementToVisible(WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+    public void waitForTheElementToClickable(WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+    public GiftsPage goToCartPage(){
         cartHeader.click();
-        CartsPage cartsPage = new CartsPage(driver);
+        GiftsPage cartsPage = new GiftsPage(driver);
         return cartsPage;
     }
-    public OrderPage goToOrderPage(){
-        cartHeader.click();
-        OrderPage orderPage = new OrderPage(driver);
-        return orderPage;
-    }
+
 
 
 }
