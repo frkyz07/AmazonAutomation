@@ -14,7 +14,6 @@ public class CartsPage extends AbstractComponent {
     WebDriver driver;
 
     public CartsPage(WebDriver driver) {
-
         super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -23,21 +22,15 @@ public class CartsPage extends AbstractComponent {
     @FindBy(css = ".cartWrap")
     List<WebElement> carts;
 
-    @FindBy(css = ".totalRow button")
-    WebElement totalButton;
+
 
     By cardTagNameBy = By.tagName("h3");
 
-    public boolean goToCartsPageAndCheckTheOrder(Object productName) {
 
-        boolean prodCart = carts.stream().anyMatch(cartProduct ->
-                cartProduct.findElement(cardTagNameBy).getText().equals(productName));
-        return prodCart;
-    }
 
-    public PaymentPage checkOut() {
+   /* public PaymentPage checkOut() {
         totalButton.click();
         PaymentPage paymentPage = new PaymentPage(driver);
         return paymentPage;
-    }
+    }*/
 }

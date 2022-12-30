@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class ErrorValidationsTest extends BaseTest {
 
-    String productName = "ADIDAS ORIGINAL";
+
     @Test(retryAnalyzer = Retry.class)
     public void loginError() throws IOException {
 
