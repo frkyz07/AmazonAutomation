@@ -28,7 +28,7 @@ public class GiftsPage extends AbstractComponent {
     @FindBy(xpath = "(//div/span[contains(text(),'Earrings')])[1]")
     WebElement product;
 
-
+    // for the "selectProduct" feature dynamism locators must change
     public ProductPage selectProduct() {
 
         acceptCookies.click();
