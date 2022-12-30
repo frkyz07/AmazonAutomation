@@ -85,8 +85,8 @@ public class BaseTest {
         FileUtils.copyFile(source,file);
         return String.valueOf(file);
     }
-    @AfterMethod(alwaysRun = true)
+    /*@AfterMethod(alwaysRun = false)
     public void killIt(){
         driver.close();
-    }
+    }*/
 }
