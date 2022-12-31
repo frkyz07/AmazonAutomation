@@ -19,14 +19,17 @@ public class GiftsPage extends AbstractComponent {
 
     @FindBy(xpath = "//span/input[@id='sp-cc-accept']")
     WebElement acceptCookies;
-    @FindBy(xpath = "(//div/span[contains(text(),'Women')])[1]")
+    @FindBy(xpath = "(//div/span[contains(text(),'Men')])[1]")
     WebElement women;
 
-    @FindBy(xpath = "(//div/ul/li/button[contains(text(),'Jewellery and Watches')])[1]")
+    @FindBy(xpath = "(//div/ul/li/button[contains(text(),'Electronics')])[1]")
     WebElement jewelleryAndWacthes;
 
-    @FindBy(xpath = "(//div/span[contains(text(),'Earrings')])[1]")
+    @FindBy(xpath = "(//div/span[contains(text(),'Camera')])[1]")
     WebElement product;
+
+
+
 
     // for the "selectProduct" feature dynamism locators must change will check tomorrow
     public ProductPage selectProduct() {
@@ -38,6 +41,7 @@ public class GiftsPage extends AbstractComponent {
         jewelleryAndWacthes.click();
         waitForTheElementToVisible(product);
         product.click();
+
         ProductPage productPage = new ProductPage(driver);
         return productPage;
     }

@@ -4,31 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- Amazon gift test's first fase added">
-      <change afterPath="$PROJECT_DIR$/reports/giftTest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasketPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestPackage/AmazonGiftTest.java" afterDir="false" />
+    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- develop branch added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuits/ErrorHandling.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuits/Purchase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuits/Amazon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/giftTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/reports/giftTest.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/loginError.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/orderHistoryTest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/productNameError.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/submitOrder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/PurchaseOrder.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/PurchaseOrder.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/CartsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/GiftsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LandingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/OrderPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/PaymentPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ThankYouPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasketAddedPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/DataProviderExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/ErrorValidationsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/SubmitOrderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasketAddedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasketAddedPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/GiftsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/GiftsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/AmazonGiftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/AmazonGiftTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +63,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits/Amazon.xml">
+  <component name="RunManager" selected="TestNG.AmazonGiftTest">
     <configuration name="AmazonGiftTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="newFrameWork" />
       <extension name="coverage">
@@ -180,8 +162,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits/Amazon.xml" />
         <item itemvalue="TestNG.AmazonGiftTest" />
+        <item itemvalue="TestNG./Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits/Amazon.xml" />
         <item itemvalue="TestNG.DataProviderExample.testCaseData" />
         <item itemvalue="TestNG.DataProviderExample" />
         <item itemvalue="TestNG.TestNGTestRunner" />
@@ -344,7 +326,28 @@
       <option name="project" value="LOCAL" />
       <updated>1672426166766</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="- Amazon gift test's first phase added">
+      <created>1672439683892</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1672439683893</updated>
+    </task>
+    <task id="LOCAL-00023" summary="- Amazon gift test's first phase added">
+      <created>1672439999954</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1672439999955</updated>
+    </task>
+    <task id="LOCAL-00024" summary="- develop branch added">
+      <created>1672440048201</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1672440048201</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -379,6 +382,8 @@
     <MESSAGE value="- last part of the dataProviders" />
     <MESSAGE value="- project cleaning" />
     <MESSAGE value="- Amazon gift test's first fase added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Amazon gift test's first fase added" />
+    <MESSAGE value="- Amazon gift test's first phase added" />
+    <MESSAGE value="- develop branch added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- develop branch added" />
   </component>
 </project>
