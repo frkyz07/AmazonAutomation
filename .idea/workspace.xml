@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- develop branch added">
+    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- test case changed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/giftTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/reports/giftTest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasketAddedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasketAddedPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/GiftsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/GiftsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/AmazonGiftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/AmazonGiftTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +20,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="github/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -347,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672440048201</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="- test case changed">
+      <created>1672529030533</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1672529030534</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -355,7 +370,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -384,6 +411,7 @@
     <MESSAGE value="- Amazon gift test's first fase added" />
     <MESSAGE value="- Amazon gift test's first phase added" />
     <MESSAGE value="- develop branch added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- develop branch added" />
+    <MESSAGE value="- test case changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="- test case changed" />
   </component>
 </project>
