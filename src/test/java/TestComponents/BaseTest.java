@@ -67,28 +67,9 @@ public class BaseTest {
         landingPage.goTo();
         return landingPage;
     }
-    public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
 
-        // read json to string
-        String jsonContent =  FileUtils.readFileToString(new File(filePath));
 
-        // json to hashmap
-        ObjectMapper mapper =new ObjectMapper();
-        List<HashMap<String, String>> data = mapper.readValue(jsonContent,
-                new TypeReference<List<HashMap<String, String>>>() {});
-        return data;
-    }
-    public String getScreenShot(String testCaseName, WebDriver driver) throws IOException {
-        TakesScreenshot ts = (TakesScreenshot)driver;
-        File source = ts.getScreenshotAs(OutputType.FILE);
-        File file = new File(System.getProperty("user.dir")+"//reports//"+ testCaseName + ".png");
-        FileUtils.copyFile(source,file);
-        return String.valueOf(file);
-    }
-    public Object[][] dataGetter() throws IOException {
-        List<HashMap<String, String>> data = getJsonDataToMap(System.getProperty("user.dir") + "//src//main//java//Data//PurchaseOrder.json");
-        return new Object[][]{{data.get(0)}, {data.get(1)},{data.get(2)}};
-    }
+
     @AfterMethod(alwaysRun = false)
     public void killIt(){
         driver.close();

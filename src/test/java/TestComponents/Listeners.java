@@ -1,5 +1,6 @@
 package TestComponents;
 
+import AbstractComponents.AbstractComponent;
 import Resources.ExtentReporter;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -41,7 +42,7 @@ public class Listeners extends BaseTest implements ITestListener {
         } catch (NoSuchFieldException e) {
             throw new RuntimeException(e);
         }
-        filePath = getScreenShot(result.getMethod().getMethodName(),driver);
+        filePath = AbstractComponent.getScreenShot(result.getMethod().getMethodName(),driver);
         extentTest.get().addScreenCaptureFromPath(filePath);
     }
     @Override
