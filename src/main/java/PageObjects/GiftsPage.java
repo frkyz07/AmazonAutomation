@@ -17,10 +17,8 @@ public class GiftsPage extends AbstractComponent {
         PageFactory.initElements(driver, this);
     }
 
-
     @FindBy(xpath = "//span/input[@id='sp-cc-accept']")
     WebElement acceptCookies;
-
 
     public WebElement personSelect(String keyword) {
         By personSelecter = By.xpath("(//div/span[contains(text(),'"+keyword+"')])[1]");
