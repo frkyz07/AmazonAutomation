@@ -85,8 +85,12 @@ public class BaseTest {
         FileUtils.copyFile(source,file);
         return String.valueOf(file);
     }
-    /*@AfterMethod(alwaysRun = false)
+    public Object[][] dataGetter() throws IOException {
+        List<HashMap<String, String>> data = getJsonDataToMap(System.getProperty("user.dir") + "//src//main//java//Data//PurchaseOrder.json");
+        return new Object[][]{{data.get(0)}, {data.get(1)},{data.get(2)}};
+    }
+    @AfterMethod(alwaysRun = false)
     public void killIt(){
         driver.close();
-    }*/
+    }
 }

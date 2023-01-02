@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- test case changed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasketAddedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasketAddedPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasketPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/GiftsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/GiftsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/PurchaseOrder.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/PurchaseOrder.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/AmazonGiftTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPackage/AmazonGiftTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,18 +50,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/TestSuits" />
@@ -75,7 +75,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AmazonGiftTest">
+  <component name="RunManager" selected="TestNG./Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits/Amazon.xml">
     <configuration name="AmazonGiftTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="newFrameWork" />
       <extension name="coverage">
@@ -174,8 +174,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AmazonGiftTest" />
         <item itemvalue="TestNG./Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits/Amazon.xml" />
+        <item itemvalue="TestNG.AmazonGiftTest" />
         <item itemvalue="TestNG.DataProviderExample.testCaseData" />
         <item itemvalue="TestNG.DataProviderExample" />
         <item itemvalue="TestNG.TestNGTestRunner" />

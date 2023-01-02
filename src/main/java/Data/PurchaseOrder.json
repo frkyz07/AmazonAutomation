@@ -1,13 +1,18 @@
 [
   {
-    "email":"faruk@ayaz.com",
-    "password": "Faruk.1313",
-    "product": "ADIDAS ORIGINAL"
+    "person":"Men",
+    "category": "Electronics",
+    "product": "Camera"
   },
   {
-    "email":"frkyz07.13@gmail.com",
-    "password": "Faruk.123",
-    "product": "ZARA COAT 3"
+    "person":"Women",
+    "category": "Electronics",
+    "product": "Speakers"
+  },
+  {
+    "person":"Teens",
+    "category": "Gaming",
+    "product": "Headphone"
   }
 ]
 

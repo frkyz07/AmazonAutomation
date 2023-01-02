@@ -8,7 +8,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.List;
 
 public class AbstractComponent {
 
@@ -46,6 +49,8 @@ public class AbstractComponent {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
+
+
     public GiftsPage goToCartPage(){
         cartHeader.click();
         GiftsPage cartsPage = new GiftsPage(driver);
