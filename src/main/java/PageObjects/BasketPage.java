@@ -15,15 +15,13 @@ public class BasketPage extends AbstractComponent {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
-    @FindBy(xpath = "//div/label/input[@id='sc-buy-box-gift-checkbox']")
-    WebElement checkBox;
-
     @FindBy(xpath = "//span/input[@name='proceedToRetailCheckout']")
     WebElement checkOutButton;
 
+
+
     public SignInPage clickCheckOutButton() {
-        checkBox.click();
+
         waitForTheElementToClickable(checkOutButton);
         checkOutButton.click();
         SignInPage signInPage = new SignInPage(driver);

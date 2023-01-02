@@ -8,7 +8,8 @@ public class AmazonGiftTest extends BaseTest {
 
     //retryAnalyzer = Retry.class
     @Test()
-    public void giftTest(){
-        landingPage.goToGiftIdeas().selectProduct().addProductToBasket().goToTheBasketPage().clickCheckOutButton();
+    public void giftTestForTechProducts(){
+        landingPage.goToGiftIdeas().selectProduct("Women","Electronics","Speakers")
+                .buyProduct();
     }
 }

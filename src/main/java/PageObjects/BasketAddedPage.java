@@ -20,17 +20,20 @@ public class BasketAddedPage extends AbstractComponent {
     }
 
 ////span/input[@id='add-to-cart-button']
-    @FindBy(xpath = "//div/a[@aria-label='1 item in shopping basket']")
+    @FindBy(xpath = "//*[@id='nav-cart-count']")
     WebElement goToTheBasketPage;
 
-    @FindBy(xpath = "(//*[contains(text(),'No thanks')])[1]")
+    @FindBy(xpath = "//*[@aria-labelledby=\"attachSiNoCoverage-announce\"]")
     WebElement noThanks;
-
+    @FindBy(xpath = "//*[@id=\"attach-close_sideSheet-link\"]")
+    WebElement exitButton;
     public BasketPage goToTheBasketPage() {
 
         //
         waitForTheElementToVisible(noThanks);
         noThanks.click();
+        waitForTheElementToClickable(exitButton);
+        exitButton.click();
         goToTheBasketPage.click();
         BasketPage basketPage = new BasketPage(driver);
         return basketPage;
