@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- make the code more reusable">
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasketAddedPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasketPage.java" beforeDir="false" />
+    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- code cleaning">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -391,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672692978198</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="- code cleaning">
+      <created>1672693799995</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1672693799995</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -419,7 +425,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- dependencies" />
     <MESSAGE value="- add new example" />
     <MESSAGE value="- working on new framework" />
     <MESSAGE value="- run the test with page object model desing pattern" />
@@ -444,6 +449,7 @@
     <MESSAGE value="- for data provider json reader added" />
     <MESSAGE value="- make the ode more reusable" />
     <MESSAGE value="- make the code more reusable" />
-    <option name="LAST_COMMIT_MESSAGE" value="- make the code more reusable" />
+    <MESSAGE value="- code cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="- code cleaning" />
   </component>
 </project>
