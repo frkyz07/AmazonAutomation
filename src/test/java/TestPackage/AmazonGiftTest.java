@@ -19,6 +19,7 @@ public class AmazonGiftTest extends BaseTest {
                 (String) input.get("category"),(String) input.get("product")).buyProduct();
 
     }
+
     @DataProvider
     public Object[][] getData() throws IOException {
         return AbstractComponent.dataGetter(path);

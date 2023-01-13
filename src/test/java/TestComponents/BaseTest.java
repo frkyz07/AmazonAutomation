@@ -60,7 +60,7 @@ public class BaseTest {
         return landingPage;
     }
 
-    @AfterMethod(alwaysRun = false)
+    @AfterMethod(alwaysRun = true)
     public void killIt(){
         driver.close();
     }
