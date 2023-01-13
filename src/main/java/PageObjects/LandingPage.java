@@ -16,9 +16,9 @@ public class LandingPage extends AbstractComponent {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
     @FindBy(xpath = "//div/a[@data-csa-c-content-id='nav_cs_giftfinder']")
     WebElement giftIdeas;
-
 
     public GiftsPage goToGiftIdeas() {
         giftIdeas.click();
@@ -29,7 +29,5 @@ public class LandingPage extends AbstractComponent {
     public void goTo() {
         driver.get("https://www.amazon.co.uk/");
     }
-
-
 }
 

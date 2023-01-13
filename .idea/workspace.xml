@@ -4,31 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- Amazon gift test's first fase added">
-      <change afterPath="$PROJECT_DIR$/reports/giftTest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasketPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/SignInPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestPackage/AmazonGiftTest.java" afterDir="false" />
+    <list default="true" id="156739bb-0ace-48c3-870c-12d0fc873169" name="Changes" comment="- code cleaning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuits/ErrorHandling.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuits/Purchase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuits/Amazon.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/loginError.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/orderHistoryTest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/productNameError.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/submitOrder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/PurchaseOrder.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/PurchaseOrder.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/CartsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/GiftsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LandingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/OrderPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/PaymentPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ThankYouPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasketAddedPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestComponents/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/DataProviderExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/ErrorValidationsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestPackage/SubmitOrderTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +21,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="github/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -56,18 +47,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/farukayaz/IdeaProjects/AmazonAutomation/TestSuits&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/TestSuits" />
@@ -344,7 +335,84 @@
       <option name="project" value="LOCAL" />
       <updated>1672426166766</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="- Amazon gift test's first phase added">
+      <created>1672439683892</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1672439683893</updated>
+    </task>
+    <task id="LOCAL-00023" summary="- Amazon gift test's first phase added">
+      <created>1672439999954</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1672439999955</updated>
+    </task>
+    <task id="LOCAL-00024" summary="- develop branch added">
+      <created>1672440048201</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1672440048201</updated>
+    </task>
+    <task id="LOCAL-00025" summary="- test case changed">
+      <created>1672529030533</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1672529030534</updated>
+    </task>
+    <task id="LOCAL-00026" summary="- test case changed">
+      <created>1672530758598</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1672530758599</updated>
+    </task>
+    <task id="LOCAL-00027" summary="- for data provider json reader added">
+      <created>1672686100114</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1672686100116</updated>
+    </task>
+    <task id="LOCAL-00028" summary="- for data provider json reader added">
+      <created>1672686172026</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1672686172028</updated>
+    </task>
+    <task id="LOCAL-00029" summary="- make the code more reusable">
+      <created>1672692978197</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1672692978198</updated>
+    </task>
+    <task id="LOCAL-00030" summary="- code cleaning">
+      <created>1672693799995</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1672693799995</updated>
+    </task>
+    <task id="LOCAL-00031" summary="- code cleaning">
+      <created>1672866896702</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1672866896703</updated>
+    </task>
+    <task id="LOCAL-00032" summary="- code cleaning">
+      <created>1672866952900</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1672866952901</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -352,7 +420,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -360,7 +440,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- dependencies" />
     <MESSAGE value="- add new example" />
     <MESSAGE value="- working on new framework" />
     <MESSAGE value="- run the test with page object model desing pattern" />
@@ -379,6 +458,13 @@
     <MESSAGE value="- last part of the dataProviders" />
     <MESSAGE value="- project cleaning" />
     <MESSAGE value="- Amazon gift test's first fase added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Amazon gift test's first fase added" />
+    <MESSAGE value="- Amazon gift test's first phase added" />
+    <MESSAGE value="- develop branch added" />
+    <MESSAGE value="- test case changed" />
+    <MESSAGE value="- for data provider json reader added" />
+    <MESSAGE value="- make the ode more reusable" />
+    <MESSAGE value="- make the code more reusable" />
+    <MESSAGE value="- code cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="- code cleaning" />
   </component>
 </project>

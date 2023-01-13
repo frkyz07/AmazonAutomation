@@ -16,14 +16,14 @@ public class ProductPage extends AbstractComponent {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//span/input[@id='add-to-cart-button']")
-    WebElement addToTheBasket;
+    @FindBy(xpath = "//*[@id='buy-now-button']")
+    WebElement buyNow;
 
-    public BasketAddedPage addProductToBasket() {
-        waitForTheElementToVisible(addToTheBasket);
-        addToTheBasket.click();
-        BasketAddedPage basketAddedPage = new BasketAddedPage(driver);
-        return basketAddedPage;
+    public SignInPage buyProduct() {
+        waitForTheElementToVisible(buyNow);
+        buyNow.click();
+        SignInPage signInPage = new SignInPage(driver);
+        return signInPage;
     }
 }
 
